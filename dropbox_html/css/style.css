@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+#container {
+    display: flex;
+    height: 140vh;
+    flex-direction: column;
+}
+#navbar {
+    display: flex;
+    border: solid black 1px;
+    height: 6%;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#left-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#right-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#icon {
+    background-color: #307efc;
+    margin-top: 0;
+    padding: 1em;
+    width: fit-content;
+}
+#icon a {
+    color: white;
+}
+#dropbox {
+    display: flex;
+    margin-top: 13px;
+    width: fit-content;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.left { 
+    margin: 0;
+    padding: 1em;  
+    padding-top: 15px;
+}
+.right {
+    margin: 0;
+    padding: 1em;
+    padding-top: 15px;
+}
+#get_s {
+    background-color: #307efc;
+    margin-top: 0;
+    padding: 1em;
+    width: fit-content;
+    
+}
+#get_s a {
+    color: white;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(24, 24, 24);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#del1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+}
+#textbox1 {
+    display: flex;
+    position: relative;
+    color: white;
+    font-size: 45px;
+    width: 60%;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#textbox2 {
+    width: 60%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#startbox {
+    background-color: #307efc;
+    height: 80px;
+    width: 200px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
