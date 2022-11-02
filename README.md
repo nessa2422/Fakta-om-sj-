@@ -1,1 +1,0 @@
-# Fakta-om-sj-
