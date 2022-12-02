@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    background-color: #dcfcf1;
+    font-family: Georgia, serif ;
+}
+#parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/*header start*/
+#header {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #68b9a0;
+    align-items: center;
+    justify-content: center;
+   /* position: sticky;
+    top: 0;*/ /* Ville ikke bruke fordi jeg ikke synes det så bra ut*/
+}   
+
+        #header-left {
+            width: 20%;
+            text-align: center;
+        }
+
+        #header #header-right {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #header a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: 'Trebuchet MS', sans-serif;
+            font-size: 1.5em;
+        }
+        #header-left #logo {
+            height: fit-content;
+        }
+        #header #header-right .header-right-item a {
+            display: flex;
+            justify-content: center;
+            font-size: 1.5em;
+            width: 100%;
+            padding: 1em;
+        }
+        #header #header-right .header-right-item {
+            width: 100%;
+        }
+/*linkene i headeren er ikke helt midtstilt, men det var det ikke tid til å sjekke*/
+/*header slutt*/
+
+
+/*innhold start*/     
+#innhold {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+        #innhold #tittel1 {
+            margin-top: 90px;
+            width: 45%;
+            height: 50px;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        #innhold #bilde1 {
+            margin-top: 50px;
+            text-align: center;
+            width: 100%;
+        }
+        #innhold .content {
+            width: 45%;
+            margin-top: 5%;
+        }
+/*innhold slutt*/
+
+/*footer start*/
+#footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 100%;
+    background-color: #68b9a0;
+}
+            #footer .footer_link {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 15%;
+                text-align: left;
+                margin-right: 0px;
+                color: whitesmoke;
+            }
+            #footer p {
+                font-style: bold;
+                font-size: 1em;
+
+            }
+            #footer a {
+                font-size: 0.8em;
+                text-decoration: none;
+                color: whitesmoke;
+                padding: 1em;
+            }            
+            #footer #footer_logo {
+                margin-right: 20px;
+                margin-left: 10px;
+                margin-top: 35px;
+                width: fit-content;
+            }
+            #footer .footer_kontakt {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 15%;
+                text-align: left;
+                margin-right: 0px;
+                color: whitesmoke;  
+            } /*Er ikke rett eller på linje med .footer_link men fikk ikke tid eller hjelp tilgjengelig*/
+            #footer h1 {
+                font-family: Georgia, serif ;
+                font-size: 1em;
+            }
+/*footer slutt*/
+
+
+@media only screen and (max-width: 768px) /*Tablet format*/ {
+    
+
+    #innhold #tittel1 {
+        width: 100%;
+        font-size: 2em;
+    }
+    
+    #innhold #bilde1 img {
+        margin-top: 5%;
+        width: 70%;
+    }
+    #innhold #bilde1 p {
+        font-size: 0.9em;
+    }
+    #innhold .content {
+        width: 70%;
+    }
+  
+#footer {
+    text-align: center;
+    width: 100%;
+}
+    #footer .footer_link {
+        width: 40%;
+        font-size: 1em;
+        text-align: right;
+    }
+    #footer a {
+        font-size: 0.8em;
+        padding: 0.5em;
+        margin-top: -5%;
+    }
+    #footer #footer_logo img {
+        width: 50%;
+    }
+    #footer .footer_kontakt {
+        width: 50%;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 425px) /*Mobil format*/ {
+    
+    #header #header-right {
+        width: 50%;
+        margin-left: 5%;
+    }
+    #header #header-right .header-right-item a {
+        display: flex;
+        justify-content: center;
+        font-size: 0.85em;
+        width: 100%;
+        padding: 1em;
+    }
+    #innhold #tittel1 {
+        font-size: 1.8em;
+        width: 50%;
+    }
+    #innhold #bilde1 img {
+        width: 90%;
+    }
+    #innhold #bilde1 p {
+        font-size: 0.7em;
+    }
+    #innhold .content {
+        width: 85%;
+    }
+#footer {
+    flex-direction: column;
+    justify-content: center;
+}
+    #footer .footer_link {
+        align-items: center;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 5%;
+        width: 50%;
+    }
+    #footer a {
+        padding: 1em;
+    }
+    #footer #footer_logo {
+        width: 60%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    #footer .footer_kontakt {
+        align-items: center;
+        margin-bottom: 5%;
+    }
+}
