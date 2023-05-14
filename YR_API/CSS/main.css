@@ -90,4 +90,13 @@ h1.temperatur {
     left: 2.9em;
 }
 /*Innhold slutt*/
+
+/*Lisens start*/
+.lisens {
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    color: white;
+}
+/*Lisens slutt*/
 /*Main content slutt*/
