@@ -21,6 +21,7 @@ body {
     max-width: 24em;
     margin: 1em;
     margin-top: 13.5em;
+    margin-bottom: 5em;
 }
 
 /*Søke funksjon start*/
@@ -97,7 +98,6 @@ h1.temperatur {
     bottom: 1em;
     text-align: center;
     color: white;
-    margin-top: 10em;
 }
 /*Lisens slutt*/
 /*Main content slutt*/
