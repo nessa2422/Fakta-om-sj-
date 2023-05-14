@@ -1,0 +1,93 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+}
+
+/*Main content start*/
+.card {
+    background: #444040d0;
+    color: white;
+    padding: 2em;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 24em;
+    margin: 1em;
+    margin-top: 13.5em;
+}
+
+/*Søke funksjon start*/
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 3em;
+    width: 3em;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    background-color: #0b0a0a2b;
+    color: white;
+}
+.search button:hover{
+    background-color: #7C7C7C6b;
+}
+.search input {
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 1.1em;
+    width: calc(100% - 100px);
+    background-color: #0000002b;
+    color: white;
+}
+.search ::placeholder {
+    color: white;
+}
+/*Søke funksjon slutt*/
+
+/*Innhold start*/
+h1.temperatur {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+.beskrivelse {
+    text-transform: capitalize;
+    margin-left: 0.5em;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 2em;
+    position: relative;
+}
+.weather.loading::after {
+    visibility: visible;
+    content: "Search City";
+    color: white;
+    position: absolute;
+    top: 0;
+    /*gjør om til em*/
+    left: 2.9em;
+}
+/*Innhold slutt*/
+/*Main content slutt*/
