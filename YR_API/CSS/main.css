@@ -94,10 +94,9 @@ h1.temperatur {
 
 /*Lisens start*/
 .lisens {
-    position: absolute;
-    bottom: 1em;
     text-align: center;
     color: white;
+    margin-top: 11em;
 }
 /*Lisens slutt*/
 /*Main content slutt*/
@@ -117,5 +116,12 @@ h1.temperatur {
 }
 .weather.loading::after {
     left: 1em;
+}
+}
+
+@media only screen and (max-height: 740px) /*Mobil format*/ {
+.lisens {
+    color: blue;
+    margin-top: 5em;
 }
 }
