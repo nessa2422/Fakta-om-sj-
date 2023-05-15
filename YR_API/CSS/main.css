@@ -121,7 +121,6 @@ h1.temperatur {
 
 @media only screen and (max-height: 740px) /*Mobil format*/ {
 .lisens {
-    color: blue;
     margin-top: 5em;
 }
 }
